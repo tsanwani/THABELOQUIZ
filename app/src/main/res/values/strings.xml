@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">THABELOQUIZ</string>
+    <string name="general">GENERAL</string>
+    <string name="you_done_press_here">You Done Press Here</string>
+    <string name="title_activity_genera__quetion">Genera_Quetion</string>
+</resources>

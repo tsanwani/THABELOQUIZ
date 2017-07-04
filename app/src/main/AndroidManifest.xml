@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.genesissy.thabeloquiz">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        <activity
+            android:name=".Start_Page"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Science"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ScienceQuestion" />
+        <activity android:name=".ScienceResults" />
+        <activity android:name=".Gameover" />
+        <activity android:name=".General" />
+        <activity
+            android:name=".Genera_Quetion"
+            android:label="@string/title_activity_genera__quetion" />
+        <activity android:name=".General_Gameover" />
+        <activity android:name=".Gerneral_Results" />
+        <activity android:name=".Real_Fact" />
+        <activity android:name=".About_App" />
+        <activity android:name=".Menu"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context="com.example.genesissy.thabeloquiz.About_App">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/topp_image"
+            android:layout_width="match_parent"
+            android:layout_height="390dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/top_image"
+            tools:ignore="ContentDescription" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="READ MORE"
+            android:gravity="center"
+            android:textSize="50sp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+
+            android:id="@+id/bal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="This Application Was Designed To Test People Knowledge.IT Was Build For Those Who Want To Know More By Testing Their
+Knowledge Through Quiz"
+            android:textSize="30sp" />
+
+
+        <TextView
+            android:layout_marginTop="25dp"
+            android:id="@+id/ball"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:fontFamily="serif"
+           android:text="Or Reading.I Hope You Have Enjoyed More Of Question And I Hope You Have Learn SomeThing New"/>
+
+
+        <TextView
+            android:layout_marginTop="25dp"
+            android:id="@+id/balll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:fontFamily="serif"
+            android:text="Thanks For Taking Time To Read And Answering Questions."/>
+
+        <ImageView
+            android:id="@+id/Picture"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:layout_below="@+id/Heading_line"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="THANKS FOR SUPPORT"
+            android:textSize="36sp"
+            android:layout_marginBottom="15dp"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar7"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:visibility="invisible" />
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

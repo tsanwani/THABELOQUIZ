@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context="com.example.genesissy.thabeloquiz.Menu">
+
+    <LinearLayout
+        android:id="@+id/Linear_Top_Image"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/top_image"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:src="@drawable/top_image"
+            android:scaleType="centerCrop"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Science"
+        android:layout_below="@id/Linear_Top_Image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="100dp"
+            android:src="@drawable/science"
+            tools:ignore="ContentDescription" />
+
+        <Button
+            android:layout_width="400dp"
+            android:layout_height="100dp"
+            android:background="#2356"
+            android:text="SCIENCE"
+            android:textSize="36sp"
+            tools:ignore="HardcodedText"
+            android:onClick="Open"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/General_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Science"
+        android:layout_marginTop="40dp">
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="100dp"
+            android:src="@drawable/globe"
+            tools:ignore="ContentDescription" />
+
+        <Button
+            android:layout_width="400dp"
+            android:layout_height="100dp"
+            android:background="#2356"
+            android:text="@string/general"
+            android:textSize="36sp"
+            android:onClick="Open_General"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/real_fact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/General_line"
+        android:layout_marginTop="40dp">
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo"
+            tools:ignore="ContentDescription" />
+
+        <Button
+            android:layout_width="400dp"
+            android:layout_height="100dp"
+            android:background="#2356"
+            android:text="ABOUT QUIZ"
+            android:textSize="36sp"
+            tools:ignore="HardcodedText"
+            android:onClick="About"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Exit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/real_fact"
+        android:layout_marginTop="110dp"
+        android:background="#DC143C"
+        android:onClick="Close"
+        android:text="@string/you_done_press_here"
+        android:textColor="#FFF8DC"
+        android:textSize="39sp" />
+
+
+</RelativeLayout>

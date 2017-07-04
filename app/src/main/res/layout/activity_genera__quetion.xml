@@ -1,0 +1,898 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BDB76B"
+    tools:context="com.example.genesissy.thabeloquiz.Genera_Quetion">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+            <TextView
+                android:layout_marginTop="40dp"
+                android:id="@+id/Timer_Head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Timer"
+                android:layout_gravity="center_horizontal"
+                android:textSize="55dp"
+                />
+
+            <TextView
+                android:id="@+id/General_Timer"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/Timer_Head"
+                android:text="0:0"
+                android:textStyle="bold"
+                android:textColor="#7FFF00"
+                android:textSize="65dp" />
+
+            //question1
+
+            <RadioGroup
+                android:id="@+id/quetion_One"
+                android:layout_marginTop="45dp"
+                android:layout_below="@id/Timer_Head"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/textView2"
+                    android:textColor="#000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                   android:text="What percent of fire-related deaths are due to smoke inhalation
+rather than burns?"
+                    android:textSize="26sp" />
+
+                <RadioButton
+                    android:textSize="26sp"
+                    android:id="@+id/radioButton1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="50%" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:text="80%" />
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:textSize="26sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="75%" />
+            </RadioGroup>
+
+            //question2
+
+            <RadioGroup
+                android:layout_marginTop="19dp"
+                android:id="@+id/quetion_Two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/quetion_One"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:textColor="#000"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"
+                   android:text="To what familiar fruit is the plantain similar?" />
+
+                <RadioButton
+                    android:textSize="26sp"
+                    android:id="@+id/radioButton4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Banana" />
+
+                <RadioButton
+                    android:id="@+id/radioButton5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Orange"
+                    android:textSize="26sp" />
+
+                <RadioButton
+                    android:id="@+id/radioButton6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:text="Apple" />
+
+            </RadioGroup>
+
+            //question3
+
+            <RadioGroup
+                android:layout_marginTop="15dp"
+                android:id="@+id/Question_Three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:textColor="#000"
+                    android:gravity="center"
+                    android:layout_marginBottom="15dp"
+                    android:text="What U.S. President was recognized as a world authority on American
+game animals?" />
+
+                <RadioButton
+                    android:id="@+id/radioButton8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:text="Brain Belin" />
+
+                <RadioButton
+                    android:id="@+id/radioButton9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:text="Theodore Roosevelt" />
+
+                <RadioButton
+                    android:id="@+id/radioButton10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:text="Lion Jaguar" />
+            </RadioGroup>
+
+            //Question 4
+
+            <RadioGroup
+                android:id="@+id/Question_Four"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginBottom="15dp"
+                    android:text="The fastest-running terrestrial animal is:"
+                    android:textColor="#000"
+                    android:textSize="26sp" />
+
+                <RadioButton
+                    android:id="@+id/radioButton11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jaguar"
+                    android:textSize="26sp" />
+
+                <RadioButton
+                    android:id="@+id/radioButton12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="cheetah"
+                    android:textSize="26sp" />
+
+                <RadioButton
+                    android:id="@+id/radioButton13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="man"
+                    android:textSize="26sp" />
+
+            </RadioGroup>
+
+            //question5
+
+            <RadioGroup
+                android:layout_marginTop="15dp"
+                android:id="@+id/Question_Five"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_marginBottom="15dp"
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:textColor="#000"
+                    android:text="As you go down into a well, your weight:" />
+
+                <RadioButton
+                    android:id="@+id/radioButton14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:text="decreases slightly" />
+
+                <RadioButton
+                    android:id="@+id/radioButton15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:text="Increases slightly" />
+
+                <RadioButton
+                    android:id="@+id/radioButton16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:text="remains exactly the same" />
+
+
+            </RadioGroup>
+
+            //Question 6
+
+            <RadioGroup
+                android:layout_marginTop="15dp"
+                android:id="@+id/Question_Six"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <TextView
+                    android:textColor="#000"
+                    android:layout_marginBottom="15dp"
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="26sp"
+                  android:text="Bees must collect nectar from approximately how many flowers to
+make 1 pound of honeycomb? Is it:"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:text="10 thousand" />
+
+                <RadioButton
+                    android:id="@+id/radioButton18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:text="15 million" />
+
+                <RadioButton
+                    android:id="@+id/radioButton19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:text="20 million" />
+
+
+            </RadioGroup>
+
+            //Question 7
+
+            <RadioGroup
+                android:layout_marginTop="15dp"
+                android:id="@+id/Question_Seven"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <TextView
+                    android:id="@+id/textView5"
+                    android:textColor="#000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:gravity="center"
+                    android:layout_marginBottom="15dp"
+                    android:text="Albacore is a type of:"/>
+                <RadioButton
+                    android:id="@+id/radioButton20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:text="tuna" />
+
+                <RadioButton
+                    android:id="@+id/radioButton21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:text="meteoroid" />
+
+                <RadioButton
+                    android:id="@+id/radioButton22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:text="shell-fish" />
+
+
+            </RadioGroup>
+
+            //Question 8
+
+            <RadioGroup
+                android:layout_marginTop="15dp"
+                android:id="@+id/Questio_Eight"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+
+
+                <TextView
+                    android:layout_marginBottom="15dp"
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:gravity="center"
+                    android:textColor="#000"
+                   android:text="The only species of cat that lives and hunts in groups is:"/>
+                <RadioButton
+                    android:id="@+id/radioButton23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:text="Jaguar" />
+
+                <RadioButton
+                    android:id="@+id/radioButton24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:text="leopard" />
+
+                <RadioButton
+                    android:id="@+id/radioButton25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:text="Lion" />
+
+            </RadioGroup>
+
+            //Question 9
+
+            <RadioGroup
+                android:layout_marginTop="15dp"
+                android:id="@+id/Question_Nine"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    android:layout_marginBottom="15dp"
+                   android:text="What 1976 Atari game was designed by Steve Wozniak and Steven Jobs?"/>
+                <RadioButton
+                    android:id="@+id/radioButton26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:text="BreakOut" />
+
+                <RadioButton
+                    android:id="@+id/radioButton27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:text="Snake" />
+
+                <RadioButton
+                    android:id="@+id/radioButton28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:text="GrandTheft" />
+            </RadioGroup>
+
+            //Question 10
+
+            <RadioGroup
+                android:layout_marginTop="15dp"
+                android:id="@+id/Question_Ten"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:layout_marginBottom="15dp"
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    android:text="This 17th-century French scientist/mathematician/philosopher
+gave his name to the SI unit of pressure" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/scince"
+                    android:layout_gravity="center"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:text="Newton" />
+
+                <RadioButton
+                    android:id="@+id/radioButton30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:text="Ohm" />
+
+                <RadioButton
+                    android:id="@+id/radioButton31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:text="Pascal" />
+            </RadioGroup>
+
+            //Question 11
+
+            <RadioGroup
+                android:layout_marginTop="15dp"
+                android:id="@+id/Question_Eleven"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:layout_marginBottom="15dp"
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:gravity="center"
+                    android:textColor="#000"
+                   android:text="What is  The Name Of This Fish" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/seahorse"
+                    android:layout_gravity="center"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:text="SeaHorse" />
+
+                <RadioButton
+                    android:id="@+id/radioButton33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:text="Gauss" />
+
+                <RadioButton
+                    android:id="@+id/radioButton34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:text="Crab" />
+            </RadioGroup>
+
+            //Question 12
+
+            <RadioGroup
+                android:id="@+id/Question_Thwelf"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:layout_marginBottom="15dp"
+                    android:id="@+id/textView13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:textColor="#000"
+                    android:gravity="center"
+                    android:text="Chose Right Name For This Image" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/stingray"
+                    android:layout_gravity="center"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:text="CutlleFish" />
+
+                <RadioButton
+                    android:id="@+id/radioButton36"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:text="Seacrab" />
+
+                <RadioButton
+                    android:id="@+id/radioButton37"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:text="Stingray" />
+            </RadioGroup>
+
+            //question13
+
+            <RadioGroup
+                android:id="@+id/Question_Thirteen"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:textColor="#000"
+                    android:gravity="center"
+                    android:text="Chose Right Name For This Image" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/cuttlefish"
+                    android:layout_gravity="center"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton38"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:text="CattleFish" />
+                <RadioButton
+                    android:id="@+id/radioButton39"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:text="SeaLong Fish" />
+
+                <RadioButton
+                    android:id="@+id/radioButton40"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:text="Sting Ray" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:layout_marginTop="15dp"
+                android:id="@+id/Question_Fourteen"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+
+                <TextView
+                    android:layout_marginBottom="15dp"
+                    android:id="@+id/textView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:textColor="#000"
+                    android:gravity="center"
+                    android:text="Choose Right Name For This Picture" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/electrickeel"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:text="Sea Eel" />
+
+                <RadioButton
+                    android:id="@+id/radioButton42"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:text="Eel" />
+
+                <RadioButton
+                    android:id="@+id/radioButton43"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:text="An Electric Eel" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:layout_marginTop="15dp"
+                android:id="@+id/Question_FiveTeen"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:layout_marginBottom="15dp"
+                    android:id="@+id/textView16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:gravity="center"
+                    android:textColor="#000"
+                  android:text="Chose Right Name For This Picture" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/mayfly"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton44"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:text="CabFly" />
+
+                <RadioButton
+                    android:id="@+id/radioButton45"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:text="MayFly" />
+
+                <RadioButton
+                    android:id="@+id/radioButton46"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:text="Mosquito" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:layout_marginTop="15dp"
+                android:id="@+id/Question_SixTeen"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:layout_marginBottom="15dp"
+                    android:id="@+id/textView17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    android:text="Chose Right Name For This Picture"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/peacok"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton47"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:text="Toad" />
+
+                <RadioButton
+                    android:id="@+id/radioButton48"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:text="Ocellate River" />
+
+                <RadioButton
+                    android:id="@+id/radioButton49"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:text="Peacock" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:layout_marginTop="15dp"
+                android:id="@+id/Question_SevenTeen"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/textView18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:textColor="#000"
+                   android:text="Chose Right Name For This Picture" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/horny_toad"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton50"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:text="Horny Toad" />
+
+                <RadioButton
+                    android:id="@+id/radioButton51"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:text="Maned" />
+
+                <RadioButton
+                    android:id="@+id/radioButton52"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:text="Snell" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:layout_marginTop="15dp"
+                android:id="@+id/Question_EigTeen"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="center"
+                    android:id="@+id/textView19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:text="How many dots are there on a Pac-Man board?"/>
+                <RadioButton
+                    android:id="@+id/radioButton53"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:text="320" />
+
+                <RadioButton
+                    android:id="@+id/radioButton54"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:text="240" />
+
+                <RadioButton
+                    android:id="@+id/radioButton55"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:text="260" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:layout_marginTop="15dp"
+                android:id="@+id/Question_NineTeen"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:gravity="center"
+                    android:textColor="#000"
+                    android:layout_marginBottom="15dp"
+                    android:id="@+id/textView20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                   android:text="How many employees were at Google as of December 31, 2007?" />
+
+                <RadioButton
+                    android:id="@+id/radioButton56"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:text="16,804" />
+
+                <RadioButton
+                    android:id="@+id/radioButton57"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:text="16,810" />
+
+                <RadioButton
+                    android:id="@+id/radioButton58"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:text="16,805" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:layout_marginTop="15dp"
+                android:id="@+id/Question_Twenty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:gravity="center"
+                    android:textSize="26sp"
+                    android:id="@+id/textView21"
+                    android:textColor="#000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="What year was Pong first released?" />
+
+                <RadioButton
+                    android:id="@+id/radioButton59"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:text="1972" />
+
+                <RadioButton
+                    android:id="@+id/radioButton60"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:text="1978" />
+
+                <RadioButton
+                    android:id="@+id/radioButton61"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:text="1994" />
+            </RadioGroup>
+
+            <Button
+                android:layout_marginTop="20dp"
+                android:id="@+id/Gneral_btn"
+                android:background="#2356"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:textColor="#006400"
+                android:text="GET RESULTS"
+                android:textSize="39sp"
+                android:onClick="GeneralBtn"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
